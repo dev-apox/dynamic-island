@@ -26,7 +26,7 @@
 
 ## 🌟 Overview
 
-**Dynamic Island for Windows** bridges the gap between clean aesthetics and practical desktop utilities. Built to deliver native-feeling responsiveness, it stays docked unobtrusively at the top of your display, dynamically expanding to reveal interactive widgets, hardware telemetry, and controls without interrupting your workflow.
+**Dynamic Island for Windows** bridges the gap between clean aesthetics and practical desktop utilities. Built to deliver native-feeling responsiveness, it stays docked unobtrusively at the top of your display, dynamically expanding to reveal media controls, weather updates, and quick settings without interrupting your workflow.
 
 ---
 
@@ -38,24 +38,24 @@
       <td width="50%" align="center">
         <img src="https://denisdev.online/projects/dynamic_island/media.png" alt="Media Player" width="100%"/>
         <br/><b>🎵 Smart Media Controller</b><br/>
-        <i>Real-time track titles, album artwork, progress bars, and playback gestures.</i>
+        <i>Track titles, artist info, progress bar, and media controls.</i>
       </td>
       <td width="50%" align="center">
-        <img src="https://denisdev.online/projects/dynamic_island/stats.png" alt="Hardware Telemetry" width="100%"/>
-        <br/><b>📊 System HUD & Telemetry</b><br/>
-        <i>Live CPU, GPU, and RAM telemetry with discreet status alerts.</i>
+        <img src="https://denisdev.online/projects/dynamic_island/weather.png" alt="Weather Widget" width="100%"/>
+        <br/><b>🌦️ Live Weather</b><br/>
+        <i>Real-time temperature and forecast glance directly from your desktop.</i>
       </td>
     </tr>
     <tr>
       <td width="50%" align="center">
-        <img src="https://denisdev.online/projects/dynamic_island/battery.png" alt="Battery & Power" width="100%"/>
-        <br/><b>🔋 Power & Hardware Alerts</b><br/>
-        <i>Fluid popups for charging states, low power warnings, and device plug/unplug.</i>
+        <img src="https://denisdev.online/projects/dynamic_island/settings.png" alt="Quick Settings" width="100%"/>
+        <br/><b>📶 Quick Toggles</b><br/>
+        <i>Fast switches for Wi-Fi and Bluetooth connectivity.</i>
       </td>
       <td width="50%" align="center">
-        <img src="https://denisdev.online/projects/dynamic_island/hud.png" alt="Volume HUD" width="100%"/>
-        <br/><b>🔊 Modern Volume & Brightness HUD</b><br/>
-        <i>Minimalist floating bars that replace bulky default Windows on-screen displays.</i>
+        <img src="https://denisdev.online/projects/dynamic_island/hud.png" alt="Brightness and Volume" width="100%"/>
+        <br/><b>☀️ Volume & Brightness HUD</b><br/>
+        <i>Minimalist floating controls to adjust audio and screen brightness smoothly.</i>
       </td>
     </tr>
   </table>
@@ -64,31 +64,31 @@
 ### 🎨 Visual & Performance Highlights
 - **Dark Mode & Glassmorphic UI:** Translucent acrylic blur with dynamic gradients that adapt cleanly over any wallpaper.
 - **Micro-Animations:** Smooth expansion, morphing physics, and responsive hover transitions.
-- **Resource Efficient:** Built to sit dormant in background threads without chewing clock cycles or battery.
+- **Resource Efficient:** Built to sit dormant in background threads without chewing clock cycles.
 - **Background Tray Integration:** Auto-minimizes to the Windows system tray with quick-access settings and launch-on-boot support.
 
 ---
 
 ## 🚀 Quick Install (Installer)
 
-Scarica il setup preconfigurato ufficiale direttamente dal sito:
+Download the official preconfigured setup directly from the website:
 
-👉 **[Scarica Dynamic Island Setup](https://denisdev.online/projects/dynamic_island/index.html)**
+👉 **[Download Dynamic Island Setup](https://denisdev.online/projects/dynamic_island/index.html)**
 
-1. Scarica l'eseguibile **`DynamicIsland-Setup.exe`**.
-2. Avvia l'installer guidato (installa i file, crea i collegamenti sul desktop e nel menu Start).
-3. Spunta l'opzione **"Start with Windows"** se vuoi avviarlo automaticamente a ogni accensione.
-4. Premi fine e goditi la tua Dynamic Island!
+1. Download the executable **`DynamicIsland-Setup.exe`**.
+2. Run the guided installer (installs files, creates desktop and Start Menu shortcuts).
+3. Check the **"Start with Windows"** option if you want it to launch automatically upon startup.
+4. Hit finish and enjoy your Dynamic Island!
 
 ---
 
 ## 🐍 Run Standalone Script (.pyw)
 
-Se non vuoi usare l'installer e preferisci avere una cartella leggera con solo lo script Python senza finestra di console:
+If you prefer not to use the installer and want a lightweight folder containing only the Python script without a console window:
 
-1. **Crea una cartella** (es. `DynamicIsland`) e inserisci all'interno lo script **`dynamic_island.pyw`** (scaricabile dalla cartella `/src` o dalle release).
-2. Assicurati di avere installato **Python 3.10+** con l'opzione *"Add python.exe to PATH"* spuntata.
-3. Apri il terminale (Prompt dei comandi o PowerShell) all'interno della cartella e installa i pacchetti necessari:
+1. **Create a folder** (e.g., `DynamicIsland`) and place the **`dynamic_island.pyw`** script inside (downloadable from the `/src` folder or releases).
+2. Make sure you have **Python 3.10+** installed with the *"Add python.exe to PATH"* option checked.
+3. Open your terminal (Command Prompt or PowerShell) inside the folder and install the required packages:
 
 ```bash
 pip install customtkinter pillow psutil
