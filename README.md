@@ -12,7 +12,7 @@
 <br/>
 
 <!-- Hero Banner / Showcase Preview -->
-<img src="https://denisdev.online/projects/dynamic_island/png1.png" alt="Dynamic Island Showcase" width="850px" style="border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);" />
+<img src="https://denisdev.online/projects/dynamic_island/pin1.png" alt="Dynamic Island Showcase" width="850px" style="border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);" />
 
 <p align="center">
   <b>Seamlessly docks at the top of your screen, morphing dynamically based on what you're doing.</b>
