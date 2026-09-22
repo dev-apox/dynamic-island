@@ -18,7 +18,7 @@
   <b>Seamlessly docks at the top of your screen, morphing dynamically based on what you're doing.</b>
 </p>
 
-[Explore Website](https://denisdev.online/projects/dynamic_island/index.html) • [Download Setup](#-quick-install) • [Features](#-core-features) • [Manual Setup](#-manual-development)
+[Explore Website](https://denisdev.online/projects/dynamic_island/index.html) • [Download Setup](#-quick-install-installer) • [Run Script (.pyw)](#-run-standalone-script-pyw) • [Features](#-core-features)
 
 ---
 
@@ -69,32 +69,26 @@
 
 ---
 
-## 🚀 Quick Install (Windows Setup Wizard)
+## 🚀 Quick Install (Installer)
 
-Grab the pre-compiled installer from the **[Releases](../../releases)** section:
+Scarica il setup preconfigurato ufficiale direttamente dal sito:
 
-1. Download **`DynamicIsland-Setup.exe`**.
-2. Run the installer wizard (installs to `Program Files`, adds Start Menu and Desktop shortcuts).
-3. Check **"Start with Windows"** if you want it ready every time you boot.
-4. Launch and enjoy!
+👉 **[Scarica Dynamic Island Setup](https://denisdev.online/projects/dynamic_island/index.html)**
+
+1. Scarica l'eseguibile **`DynamicIsland-Setup.exe`**.
+2. Avvia l'installer guidato (installa i file, crea i collegamenti sul desktop e nel menu Start).
+3. Spunta l'opzione **"Start with Windows"** se vuoi avviarlo automaticamente a ogni accensione.
+4. Premi fine e goditi la tua Dynamic Island!
 
 ---
 
-## 🛠️ Manual Development
+## 🐍 Run Standalone Script (.pyw)
 
-If you prefer building from the raw Python source:
+Se non vuoi usare l'installer e preferisci avere una cartella leggera con solo lo script Python senza finestra di console:
+
+1. **Crea una cartella** (es. `DynamicIsland`) e inserisci all'interno lo script **`dynamic_island.pyw`** (scaricabile dalla cartella `/src` o dalle release).
+2. Assicurati di avere installato **Python 3.10+** con l'opzione *"Add python.exe to PATH"* spuntata.
+3. Apri il terminale (Prompt dei comandi o PowerShell) all'interno della cartella e installa i pacchetti necessari:
 
 ```bash
-# 1. Clone the repository
-git clone [https://github.com/your-username/dynamic-island-windows.git](https://github.com/your-username/dynamic-island-windows.git)
-cd dynamic-island-windows
-
-# 2. Set up environment
-python -m venv venv
-venv\Scripts\activate
-
-# 3. Install required libraries
-pip install -r requirements.txt
-
-# 4. Launch the application
-python main.py
+pip install customtkinter pillow psutil
