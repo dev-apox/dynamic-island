@@ -90,7 +90,7 @@ Download the official preconfigured setup directly from the website:
 
 If you prefer not to use the installer and want a lightweight folder containing only the Python script without a console window:
 
-1. **Create a folder** (e.g., `DynamicIsland`) and place the **`main.pyw`** script inside (downloadable from the `/src` folder or releases).
+1. **Create a folder** (e.g., `DynamicIsland`) and place the **`dynamic-island.pyw`** script inside (downloadable from the `/src` folder or releases).
 2. Make sure you have **Python 3.10+** installed with the *"Add python.exe to PATH"* option checked.
 3. Open your terminal (Command Prompt or PowerShell) inside the folder and install the required packages:
 
