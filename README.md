@@ -7,7 +7,6 @@
 [![Website](https://img.shields.io/badge/Website-denisdev.online-8A2BE2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://denisdev.online/projects/dynamic_island/index.html)
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/)
 [![Built with](https://img.shields.io/badge/Python-CustomTkinter-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 <br/>
 
@@ -21,11 +20,19 @@
 
 </div>
 
+<div align="center">
+  <img src="assets/pin1.png" alt="Pin 1 Preview" width="100%"/>
+</div>
+
 ## 🌟 Overview
 
 **Dynamic Island for Windows** bridges the gap between clean aesthetics and practical desktop utilities. Built to deliver native-feeling responsiveness, it stays docked unobtrusively at the top of your display, dynamically expanding to reveal media controls, weather updates, and quick settings without interrupting your workflow.
 
 ---
+
+<div align="center">
+  <img src="assets/pin2.png" alt="Pin 2 Preview" width="100%"/>
+</div>
 
 ## ⚡ Core Features
 
