@@ -6,7 +6,7 @@
 
 [![Website](https://img.shields.io/badge/Website-denisdev.online-8A2BE2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://denisdev.online/projects/dynamic_island/index.html)
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/)
-[![Built with](https://img.shields.io/badge/Python-CustomTkinter-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/)
+[![Built with](https://img.shields.io/badge/Python-PyQt6-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/)
 
 <br/>
 
@@ -26,7 +26,7 @@
 
 ## 🌟 Overview
 
-**Dynamic Island for Windows** bridges the gap between clean aesthetics and practical desktop utilities. Built to deliver native-feeling responsiveness, it stays docked unobtrusively at the top of your display, dynamically expanding to reveal media controls, weather updates, and quick settings without interrupting your workflow.
+**Dynamic Island for Windows** bridges the gap between clean aesthetics and practical desktop utilities. Built to deliver native-feeling responsiveness, it stays docked unobtrusively at the top of your display, dynamically expanding to reveal media controls, smart notifications, system stats, and quick settings without interrupting your workflow.
 
 ---
 
@@ -42,34 +42,35 @@
       <td width="50%" align="center">
         <img src="https://denisdev.online/projects/dynamic_island/media.png" alt="Media Player" width="100%"/>
         <br/><b>🎵 Smart Media Controller</b><br/>
-        <i>Track titles, artist info, progress bar, and media controls.</i>
+        <i>Track titles, artist info, 60FPS audio visualizer, and media controls.</i>
       </td>
       <td width="50%" align="center">
-        <img src="https://denisdev.online/projects/dynamic_island/weather.png" alt="Weather Widget" width="100%"/>
-        <br/><b>🌦️ Live Weather</b><br/>
-        <i>Real-time temperature and forecast glance directly from your desktop.</i>
+        <img src="https://denisdev.online/projects/dynamic_island/weather.png" alt="System Widgets" width="100%"/>
+        <br/><b>📊 Customizable Right Widget</b><br/>
+        <i>Choose what you want to see: Live Weather, CPU Usage, RAM Usage, or Battery level.</i>
       </td>
     </tr>
     <tr>
       <td width="50%" align="center">
-        <img src="https://denisdev.online/projects/dynamic_island/settings.png" alt="Quick Settings" width="100%"/>
-        <br/><b>📶 Quick Toggles</b><br/>
-        <i>Fast switches for Wi-Fi and Bluetooth connectivity.</i>
+        <img src="https://denisdev.online/projects/dynamic_island/settings.png" alt="Notifications" width="100%"/>
+        <br/><b>🔔 Windows Notification Center</b><br/>
+        <i>Catches native Windows Toast Notifications and displays them beautifully in a dedicated tab.</i>
       </td>
       <td width="50%" align="center">
-        <img src="https://denisdev.online/projects/dynamic_island/hud.png" alt="Brightness and Volume" width="100%"/>
-        <br/><b>☀️ Volume & Brightness HUD</b><br/>
-        <i>Minimalist floating controls to adjust audio and screen brightness smoothly.</i>
+        <img src="https://denisdev.online/projects/dynamic_island/hud.png" alt="Control Panel" width="100%"/>
+        <br/><b>🎨 Advanced Control Panel</b><br/>
+        <i>Customize X/Y positions, dimensions, opacity, custom colors, and preset themes on the fly.</i>
       </td>
     </tr>
   </table>
 </div>
 
 ### 🎨 Visual & Performance Highlights
-- **Dark Mode & Glassmorphic UI:** Translucent acrylic blur with dynamic gradients that adapt cleanly over any wallpaper.
-- **Micro-Animations:** Smooth expansion, morphing physics, and responsive hover transitions.
-- **Resource Efficient:** Built to sit dormant in background threads without chewing clock cycles.
-- **Background Tray Integration:** Auto-minimizes to the Windows system tray with quick-access settings and launch-on-boot support.
+- **Stunning Themes:** Choose between *Default Total Black*, *Apple Glass (Aero Blur)*, *Dark Neon*, *Midnight Blue*, and *Sunset Gold*.
+- **Completely Borderless:** Ultra-clean design that blends flawlessly with your desktop.
+- **Smart Display Modes:** Choose between *Always Idle*, *Auto-Hide (15s)*, or *Fixed (Visible over Fullscreen/Games)*.
+- **Micro-Animations:** Smooth expansion, morphing physics, and seamless page-scrolling using the mouse wheel or arrow keys.
+- **Resource Efficient:** Built with `PyQt6`, keeping background hardware usage extremely low.
 
 ---
 
@@ -88,11 +89,11 @@ Download the official preconfigured setup directly from here:
 
 ## 🐍 Run Standalone Script (.pyw)
 
-If you prefer not to use the installer and want a lightweight folder containing only the Python script without a console window:
+If you prefer not to use the installer and want a lightweight folder containing only the Python script:
 
-1. **Create a folder** (e.g., `DynamicIsland`) and place the **`dynamic-island.pyw`** script inside (downloadable from the `/src` folder or releases).
+1. **Create a folder** (e.g., `DynamicIsland`) and place the **`dynamic-island.pyw`** script inside.
 2. Make sure you have **Python 3.10+** installed with the *"Add python.exe to PATH"* option checked.
-3. Open your terminal (Command Prompt or PowerShell) inside the folder and install the required packages:
+3. Open your terminal (Command Prompt or PowerShell) inside the folder and install the required packages. *(Note: We transitioned to PyQt6 for better performance and animations!)*:
 
 ```bash
-pip install customtkinter pillow psutil
+pip install PyQt6 psutil requests screen-brightness-control winsdk
