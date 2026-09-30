@@ -77,7 +77,7 @@
 
 Download the official preconfigured setup directly from the website:
 
-👉 **[Download Dynamic Island Setup](https://denisdev.online/projects/dynamic_island/index.html)**
+👉 **[Download Dynamic Island (https://denisdev.altervista.org/DynamicIsland-Setup.exe)**
 
 1. Download the executable **`DynamicIsland-Setup.exe`**.
 2. Run the guided installer (installs files, creates desktop and Start Menu shortcuts).
