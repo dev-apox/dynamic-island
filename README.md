@@ -75,7 +75,7 @@
 
 ## 🚀 Quick Install (Installer)
 
-Download the official preconfigured setup directly from the website:
+Download the official preconfigured setup directly from here:
 
 👉 **[Download Dynamic Island](https://denisdev.altervista.org/DynamicIsland-Setup.exe)**
 
