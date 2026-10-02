@@ -1,4 +1,5 @@
-#Current Version v2.0.0
+# Current Version v2.0.0
+# Made by denisdev
 import sys
 import asyncio
 import requests
@@ -216,7 +217,7 @@ class ControlPanelDialog(QDialog):
         super().__init__()
         self.island = main_island
         self.setWindowTitle("Dynamic Island Control Panel")
-        self.resize(400, 480)
+        self.resize(400, 420)
         self.setStyleSheet("QDialog { background-color: #121212; color: #ffffff; font-family: 'Segoe UI Variable Display'; } QLabel { color: #ffffff; } QPushButton { background-color: #222; color: #fff; border: 1px solid #444; border-radius: 6px; padding: 6px; } QPushButton:hover { background-color: #333; } QSlider::groove:horizontal { background: #333; height: 6px; border-radius: 3px; } QSlider::sub-page:horizontal { background: #0a84ff; height: 6px; border-radius: 3px; } QSlider::handle:horizontal { background: #ffffff; width: 14px; margin-top: -4px; margin-bottom: -4px; border-radius: 7px; } QComboBox { background: #222; color: #fff; border: 1px solid #444; border-radius: 6px; padding: 4px; }")
 
         tabs = QTabWidget(self)
@@ -232,13 +233,6 @@ class ControlPanelDialog(QDialog):
         self.slider_w.setValue(self.island.large_rect.width())
         self.slider_w.valueChanged.connect(self.update_dimensions)
         l_pos.addWidget(self.slider_w)
-
-        l_pos.addWidget(QLabel("Island Height Offset:"))
-        self.slider_h = QSlider(Qt.Orientation.Horizontal)
-        self.slider_h.setRange(180, 400)
-        self.slider_h.setValue(self.island.large_rect.height())
-        self.slider_h.valueChanged.connect(self.update_dimensions)
-        l_pos.addWidget(self.slider_h)
 
         l_pos.addWidget(QLabel("Vertical Position Offset:"))
         self.slider_y = QSlider(Qt.Orientation.Horizontal)
@@ -314,13 +308,17 @@ class ControlPanelDialog(QDialog):
         main_lay.addLayout(bottom_lay)
 
     def update_dimensions(self):
-        w = self.slider_w.value()
-        h = self.slider_h.value()
-        y = self.slider_y.value()
+        w = int(self.slider_w.value())
+        h = 275
+        y = int(self.slider_y.value())
         
-        self.island.small_rect = QRect(self.island.screen_w // 2 - (w // 3), y, w // 1.5, 36)
+        small_w = int(w / 1.5)
+        
+        self.island.small_rect = QRect(self.island.screen_w // 2 - (small_w // 2), y, small_w, 36)
         self.island.large_rect = QRect(self.island.screen_w // 2 - (w // 2), y, w, h)
-        self.island.hidden_rect = QRect(self.island.screen_w // 2 - (w // 3), -40, w // 1.5, 36)
+        self.island.hidden_rect = QRect(self.island.screen_w // 2 - (small_w // 2), -40, small_w, 36)
+        
+        self.island.anim.stop()
         
         if self.island.stack.isVisible():
             self.island.setGeometry(self.island.large_rect)
@@ -378,7 +376,6 @@ class ControlPanelDialog(QDialog):
         self.combo_presets.setCurrentIndex(0)
         self.combo_widget.setCurrentIndex(0)
         self.slider_w.setValue(380)
-        self.slider_h.setValue(275)
         self.slider_y.setValue(-2)
         self.update_dimensions()
         self.island.apply_theme()
