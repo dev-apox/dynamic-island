@@ -5,7 +5,7 @@ Pillow>=10.0.0
 # Windows System Telemetry & Hardware Monitoring
 psutil>=5.9.0
 
-# Windows Media Integration & System APIs (Media Player / Audio Controls)
+# Windows Media Integration & System APIs (Media Player, Volume Control, etc.)
 winsdk>=1.0.0
 pycaw>=20230407
 comtypes>=1.2.0
