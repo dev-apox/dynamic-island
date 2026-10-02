@@ -1,3 +1,4 @@
+#Current Version v2.0.0
 import sys
 import asyncio
 import requests
