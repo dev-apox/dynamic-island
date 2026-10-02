@@ -1,0 +1,17 @@
+# UI & Desktop Framework
+customtkinter>=5.2.0
+Pillow>=10.0.0
+
+# Windows System Telemetry & Hardware Monitoring
+psutil>=5.9.0
+
+# Windows Media Integration & System APIs (Media Player / Audio Controls)
+winsdk>=1.0.0
+pycaw>=20230407
+comtypes>=1.2.0
+
+# System Tray & Background Integration
+pystray>=0.19.5
+
+# Packaging / Distribution
+pyinstaller>=6.0.0
