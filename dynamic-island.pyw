@@ -1,4 +1,4 @@
-# Current Version v2.0.0
+# Current Version v2.0.1 beta
 # Made by denisdev
 import sys
 import asyncio
