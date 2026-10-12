@@ -21,7 +21,7 @@
 </div>
 
 <div align="center">
-  <img src="assets/pin1.png" alt="Pin 1 Preview" width="100%"/>
+  <img src="assets/Pin1.png" alt="Pin 1 Preview" width="100%"/>
 </div>
 
 ## 🌟 Overview
@@ -31,7 +31,14 @@
 ---
 
 <div align="center">
-  <img src="assets/pin2.png" alt="Pin 2 Preview" width="100%"/>
+  <img src="assets/Pin2.png" alt="Pin 2 Preview" width="100%"/>
+</div>
+
+---
+
+
+<div align="center">
+  <img src="assets/Pin3.png" alt="Pin 3 Preview" width="100%"/>
 </div>
 
 ## ⚡ Core Features
